@@ -1,0 +1,6 @@
+1- Column = IF(Sales[TaxAmt]=0,1,Sales[TaxAmt])
+2- OrderYear = YEAR(Sales[OrderDate])
+3- OrderMonth = MONTH(Sales[OrderDate])
+4- OrderDay = DAY(Sales[OrderDate])
+5- TotalCost = (Sales[OrderQuantity] * Sales[UnitPrice]) + Sales[TaxAmt] 
+6- Revenue = Sales[TotalCost] - Sales[TotalProductCost]
